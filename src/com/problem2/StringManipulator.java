@@ -9,18 +9,20 @@ public class StringManipulator {
             return null;
         }
 
-        String ansString = "";
+        String[] divided = input.split("");
 
-        String[] charArr = input.split("");
+        String ans = "";
 
-        for(int i = 0; i < charArr.length; i++) {
-            if(charArr[i] != "a" && charArr[i] != "e" && charArr[i] != "i" && charArr[i] != "o" && charArr[i] != "u") {
-                String newString = ansString + charArr[i];
-                ansString = newString;
+        for(int i = 0; i < divided.length; i++) {
+
+            if(divided[i].equals("a") || divided[i].equals("e") || divided[i].equals("i") || divided[i].equals("o") || divided[i].equals("u")) {
+                continue;
             }
+
+            ans += divided[i];
         }
 
-        return ansString;
+        return ans;
     }
 
 }

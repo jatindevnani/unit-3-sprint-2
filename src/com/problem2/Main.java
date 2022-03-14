@@ -12,7 +12,6 @@ public class Main {
 
         String stringWithoutVowels = vowelRemover.removeVowels(input);
         System.out.println(stringWithoutVowels);
-
     }
 }
 
