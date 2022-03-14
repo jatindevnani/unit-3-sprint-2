@@ -25,12 +25,8 @@ public class Main {
         interfaceOne.methodOne();
 
         //Down casting
-        //By downcasting the current object we can call
-        //methodTwo and methodThree
-
-        ((ClassTwo)interfaceOne).methodTwo(); //Inline Down Casting
-        ((ClassTwo)interfaceOne).methodThree(); //Inline Down Casting
-        
-
+        ClassTwo classTwoObject = (ClassTwo) interfaceOne; //DOWN CASTING
+        classTwoObject.methodTwo();
+        classTwoObject.methodThree();
     }
 }
